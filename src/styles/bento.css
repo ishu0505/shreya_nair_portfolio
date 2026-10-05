@@ -1,0 +1,198 @@
+/**
+ * FILE: src/styles/bento.css
+ * The tile grid: front-page layout, 'focus' layout (one big tile + rail), the tile look, mobile rules.
+ * Tile positions on the front page are the grid-area lines near the top.
+ */
+
+.bento {
+  display: grid;
+  gap: var(--gap);
+}
+
+/* ===== tile base =====
+   The look is painted by a pseudo-element so the content on top stays crisp:
+     ::before = the fill + a thin outline, brightening to pink on hover.   */
+.tile {
+  --tone: var(--blue);
+  --on: var(--ink);
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  color: var(--on);
+}
+.tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--tone);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+  transition: box-shadow .25s, border-color .25s;
+}
+
+.tile--home,
+.tile--rail { cursor: pointer; }
+.tile--home:hover::before,
+.tile--rail:hover::before { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), 0 14px 40px rgba(255, 77, 148, .22); }
+
+/* tones: --tone is the fill, --on the text colour that sits on it */
+.tone-blue   { --tone: var(--blue);   --on: var(--ink); }
+.tone-yellow { --tone: var(--yellow); --on: var(--ink); }
+.tone-mint   { --tone: var(--mint);   --on: var(--ink); }
+.tone-pink   { --tone: var(--accent); --on: var(--black); --icon-accent: var(--black); --icon-soft: rgba(9, 9, 11, .14); --icon-lock: var(--accent); }
+.tone-lilac  { --tone: var(--accent-soft); --on: var(--black); }
+.tone-peach  { --tone: var(--accent-wash); --on: var(--black); }
+.tone-white  { --tone: var(--white);  --on: var(--black); }
+.tone-cream  { --tone: linear-gradient(145deg, #0b0b0d 0%, #1c0f17 55%, #6a1d41 100%); --on: var(--ink); }
+
+/* an opened tile is always a calm dark page; its cards bring the colour */
+.tile.tile--main { --tone: #0e0e11; --on: var(--ink); }
+.tile--main::before { border-color: rgba(255, 77, 148, .35); }
+
+/* content sits above the painted background */
+.tile__preview,
+.tile__rail,
+.tile__main {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  border-radius: 19px;
+  overflow: hidden;
+}
+
+/* ===== FRONT PAGE: all tiles visible =====
+   Desktop: 4 x 3 grid that fits the viewport.
+     profile profile projects projects
+     profile profile resume   hobbies
+     writing contact resume   hobbies                                  */
+.bento--home {
+  grid-template-columns: var(--cols, repeat(4, minmax(0, 1fr)));
+  grid-template-rows: var(--rows, repeat(3, minmax(0, 1fr)));
+  height: max(var(--stage-h), 560px);
+  padding: 14px 8px 8px 4px; /* room for hanging stickers */
+}
+.bento--home .tile--profile  { grid-area: 1 / 1 / 3 / 3; }
+.bento--home .tile--projects { grid-area: 1 / 3 / 2 / 5; }
+.bento--home .tile--resume   { grid-area: 2 / 3 / 4 / 4; }
+.bento--home .tile--hobbies  { grid-area: 2 / 4 / 4 / 5; }
+.bento--home .tile--writing  { grid-area: 3 / 1 / 4 / 2; }
+.bento--home .tile--contact  { grid-area: 3 / 2 / 4 / 3; }
+
+/* ===== FOCUS: one tile big, the rest shrink into a rail =====
+   Desktop: big tile on the left, rail of small tiles on the right.   */
+.bento--focus {
+  grid-template-columns: minmax(0, 1fr) var(--rail-w);
+  grid-template-rows: var(--rows, repeat(5, minmax(0, 1fr)));
+  height: var(--stage-h);
+  padding: 4px 8px 8px 4px;
+}
+.bento--focus .tile { grid-column: 2; grid-row: auto; }
+.bento--focus .tile--main { grid-column: 1; grid-row: 1 / -1; }
+
+/* ===== tile contents by mode ===== */
+.tile__preview {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.tile__arrow {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1.1rem;
+  transition: background .2s, color .2s;
+}
+.tile--home:hover .tile__arrow { background: var(--accent); border-color: var(--accent); color: var(--black); }
+
+.tile__rail {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tile__rail-title { font-family: var(--font-head); font-size: 1.1rem; font-weight: 600; }
+
+.tile__main { display: flex; flex-direction: column; }
+.tile__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 26px 10px;
+}
+.tile__header h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  line-height: 1.05;
+}
+.tile__close {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  font-size: 1rem;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.tile__close:hover { background: var(--accent); border-color: var(--accent); color: var(--black); }
+.tile__body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px 26px 28px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===== tablet + mobile ===== */
+@media (max-width: 899px) {
+  /* front page: 2 columns, the page scrolls */
+  .bento--home {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: minmax(150px, auto);
+    height: auto;
+    padding: 18px 8px 12px 4px;
+  }
+  .bento--home .tile { grid-area: auto; }
+  .bento--home .tile--profile,
+  .bento--home .tile--contact { grid-column: span 2; }
+  .bento--home .tile--profile { min-height: 320px; }
+
+  /* focus: big tile on top, rail of five small tiles along the bottom */
+  .bento--focus {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: minmax(0, 1fr) 84px;
+    gap: 12px;
+  }
+  .bento--focus .tile { grid-column: auto; grid-row: 2; }
+  .bento--focus .tile--main { grid-column: 1 / -1; grid-row: 1; }
+
+  .tile__rail {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: 0 2px;
+    text-align: center;
+  }
+  .tile__rail-title { font-size: .82rem; line-height: 1.1; }
+  .tile__rail .doodle-svg { width: 30px; height: 30px; }
+
+  .tile__arrow { display: none; }
+  .tile__preview { padding: 18px; }
+  .tile__header { padding: 16px 18px 8px; }
+  .tile__body { padding: 4px 16px 22px; }
+}

@@ -1,0 +1,98 @@
+{
+  "experience": [
+    {
+      "id": "meragi",
+      "role": "Programme Manager, Founder's Office",
+      "company": "Meragi (Series-A startup)",
+      "place": "Bangalore",
+      "period": "Jan 2025 – Apr 2025",
+      "tone": "pink",
+      "wide": true,
+      "bullets": [
+        "Reconstructed pricing frameworks and conducted competitor benchmarking to enhance unit economics and revenue growth.",
+        "Conducted cost-benefit analysis for marketing and operational initiatives, bridging the gap between company vision and tactical execution.",
+        "Managed cross-functional projects across HR, Strategy and Marketing, demonstrating the agility required to navigate the entrepreneurial side of wealth creation."
+      ]
+    },
+    {
+      "id": "northern-trust",
+      "role": "Analyst",
+      "company": "Northern Trust",
+      "place": "Pune",
+      "period": "Mar 2023 – Aug 2024",
+      "tone": "blue",
+      "bullets": [
+        "Managed daily risk exposure for a multi-asset OTC derivatives portfolio, executing settlements in accordance with ISDA/CSA frameworks to manage counterparty credit risk.",
+        "Eliminated CSDR settlement penalties through proactive trade monitoring and valuation dispute resolution, ensuring 100% regulatory compliance for high-value institutional accounts.",
+        "Mitigated liquidity risk by managing margin calls and keeping all derivative positions fully collateralized against market volatility.",
+        "Acted as the primary liaison between investment managers and custodians to resolve complex valuation discrepancies in volatile markets."
+      ]
+    },
+    {
+      "id": "genpact",
+      "role": "Apprentice",
+      "company": "Genpact",
+      "place": "Delhi",
+      "period": "Jul 2022 – Sep 2022",
+      "tone": "yellow",
+      "bullets": [
+        "Supported the Manulife Insurance process, delivering efficient claims, policy and investment solutions.",
+        "Ensured seamless client service and adherence to industry regulations through close collaboration with the Manulife team."
+      ]
+    },
+    {
+      "id": "mitkat",
+      "role": "Intern",
+      "company": "MitKat Advisory",
+      "place": "Delhi",
+      "period": "Nov 2020 – Jan 2021",
+      "tone": "mint",
+      "bullets": [
+        "Provided predictive risk intelligence on geopolitical shifts, advising clients on macro-environmental risks, a critical component of tactical asset allocation.",
+        "Monitored and researched contemporary risks in India, recognised for producing high-quality research outputs."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "smu",
+      "school": "Singapore Management University",
+      "period": "Jul 2026 – Jul 2027",
+      "detail": "MSc in Wealth Management.",
+      "tone": "pink"
+    },
+    {
+      "id": "du-mcom",
+      "school": "University of Delhi: Delhi School of Economics",
+      "period": "Aug 2021 – Jul 2022",
+      "detail": "Master of Commerce.",
+      "tone": "blue"
+    },
+    {
+      "id": "du-bcom",
+      "school": "University of Delhi: Shri Ram College of Commerce (SRCC)",
+      "period": "Aug 2016 – Jul 2020",
+      "detail": "Bachelor of Commerce.",
+      "tone": "lilac"
+    }
+  ],
+  "certifications": [
+    "Financial Analyst (Udemy)",
+    "Financial Markets (Coursera)",
+    "Introduction to Negotiation (Coursera)"
+  ],
+  "skills": [
+    "SWIFT Messaging",
+    "Bloomberg Terminal",
+    "Euroclear",
+    "DTC (Depository Trust Company)",
+    "Colline",
+    "Advanced Excel (Macros)",
+    "Financial Modelling",
+    "ISDA / CSA",
+    "Collateral Management",
+    "Counterparty Credit Risk",
+    "Liquidity Risk",
+    "CSDR Settlements"
+  ]
+}

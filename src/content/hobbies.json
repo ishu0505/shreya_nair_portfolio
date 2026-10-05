@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mountaineering",
+    "title": "Mountaineering",
+    "text": "Instructor grading, 2015.",
+    "icons": [
+      "mountain"
+    ],
+    "tone": "blue"
+  },
+  {
+    "id": "aerobics",
+    "title": "Aerobics",
+    "text": "National level, CBSE 2014.",
+    "icons": [
+      "bolt"
+    ],
+    "tone": "pink"
+  },
+  {
+    "id": "athletics",
+    "title": "Athletics",
+    "text": "Gold and bronze medalist, district athletics.",
+    "icons": [
+      "trophy",
+      "medal"
+    ],
+    "tone": "yellow"
+  },
+  {
+    "id": "debate",
+    "title": "Debate",
+    "text": "Active participant in debate competitions.",
+    "icons": [
+      "speech"
+    ],
+    "tone": "mint"
+  },
+  {
+    "id": "olympiad",
+    "title": "Olympiads",
+    "text": "Rank holder in Economics and Science Olympiad, 2013–2017.",
+    "icons": [
+      "book",
+      "star"
+    ],
+    "tone": "lilac"
+  },
+  {
+    "id": "volunteering",
+    "title": "Volunteering",
+    "text": "Chetak Asha School, Bathinda: community inclusiveness and a rehabilitation programme for children with special needs (2020–2021).",
+    "icons": [
+      "heart"
+    ],
+    "tone": "peach"
+  },
+  {
+    "id": "languages",
+    "title": "Languages",
+    "text": "English (fluent), Hindi (fluent).",
+    "icons": [
+      "globe"
+    ],
+    "tone": "white"
+  }
+]

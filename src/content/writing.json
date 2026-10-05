@@ -1,0 +1,23 @@
+{
+  "articles": [
+    {
+      "id": "placeholder-insight",
+      "title": "Your first market insight goes here",
+      "category": "Placeholder",
+      "date": "Add a date",
+      "summary": "Use this space to link an article, research note or LinkedIn post on wealth management, markets or risk. Edit or replace it from the admin.",
+      "image": "assets/images/placeholder-insight.svg",
+      "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+      "tone": "pink"
+    }
+  ],
+  "links": [
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "title": "Follow along ↗",
+      "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+      "tone": "white"
+    }
+  ]
+}

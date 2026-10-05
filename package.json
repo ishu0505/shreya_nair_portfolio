@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/playfair-display": "^5.3.0",
+    "framer-motion": "^14.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.2"
+  },
+  "name": "shreya-nair-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "validate": "node scripts/validate-content.mjs",
+    "prebuild": "npm run validate",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "node tests/admin-e2e.cjs"
+  }
+}

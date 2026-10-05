@@ -1,0 +1,181 @@
+{
+  "profile": [
+    {
+      "icon": "chart",
+      "size": 51,
+      "rot": -10,
+      "pos": {
+        "top": -26,
+        "right": "24%"
+      }
+    },
+    {
+      "icon": "mountain",
+      "size": 56,
+      "rot": 8,
+      "pos": {
+        "bottom": -26,
+        "right": "8%"
+      },
+      "keep": true
+    },
+    {
+      "icon": "sparkle",
+      "size": 35,
+      "rot": 12,
+      "pos": {
+        "top": "40%",
+        "right": -16
+      }
+    },
+    {
+      "icon": "star",
+      "size": 30,
+      "rot": -14,
+      "pos": {
+        "top": "9%",
+        "left": -14
+      }
+    },
+    {
+      "icon": "coin",
+      "size": 40,
+      "rot": -8,
+      "pos": {
+        "bottom": -22,
+        "left": "34%"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "icon": "briefcase",
+      "size": 49,
+      "rot": 8,
+      "pos": {
+        "top": -24,
+        "left": "44%"
+      }
+    },
+    {
+      "icon": "bank",
+      "size": 44,
+      "rot": -8,
+      "pos": {
+        "top": "56%",
+        "left": -22
+      }
+    },
+    {
+      "icon": "shield",
+      "size": 48,
+      "rot": 10,
+      "pos": {
+        "top": "34%",
+        "right": -20
+      }
+    }
+  ],
+  "resume": [
+    {
+      "icon": "medal",
+      "size": 49,
+      "rot": -10,
+      "pos": {
+        "top": -24,
+        "left": "10%"
+      }
+    },
+    {
+      "icon": "cap",
+      "size": 49,
+      "rot": 12,
+      "pos": {
+        "bottom": -24,
+        "right": -14
+      },
+      "keep": true
+    },
+    {
+      "icon": "star",
+      "size": 28,
+      "rot": 8,
+      "pos": {
+        "top": "45%",
+        "left": -14
+      }
+    }
+  ],
+  "hobbies": [
+    {
+      "icon": "trophy",
+      "size": 46,
+      "rot": -12,
+      "pos": {
+        "top": -22,
+        "right": "26%"
+      }
+    },
+    {
+      "icon": "globe",
+      "size": 44,
+      "rot": 10,
+      "pos": {
+        "bottom": -24,
+        "left": -14
+      },
+      "keep": true
+    },
+    {
+      "icon": "target",
+      "size": 41,
+      "rot": -6,
+      "pos": {
+        "top": "46%",
+        "right": -18
+      }
+    }
+  ],
+  "writing": [
+    {
+      "icon": "pencil",
+      "size": 46,
+      "rot": 14,
+      "pos": {
+        "top": -22,
+        "right": 64
+      }
+    },
+    {
+      "icon": "calc",
+      "size": 43,
+      "rot": -8,
+      "pos": {
+        "bottom": -24,
+        "right": 10
+      },
+      "keep": true
+    }
+  ],
+  "contact": [
+    {
+      "icon": "speech",
+      "size": 46,
+      "rot": -8,
+      "pos": {
+        "top": -22,
+        "left": "16%"
+      }
+    },
+    {
+      "icon": "diamond",
+      "size": 35,
+      "rot": 12,
+      "pos": {
+        "bottom": -22,
+        "right": -10
+      },
+      "keep": true
+    }
+  ]
+}

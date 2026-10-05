@@ -1,0 +1,51 @@
+[
+  {
+    "id": "pricing",
+    "title": "Pricing Framework Rebuild",
+    "category": "Strategy · Meragi",
+    "tech": "Competitor benchmarking · Unit economics · Revenue growth",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "pink",
+    "image": "assets/images/placeholder-work.svg"
+  },
+  {
+    "id": "otc-risk",
+    "title": "OTC Derivatives Risk & Collateral",
+    "category": "Risk · Northern Trust",
+    "tech": "ISDA / CSA · Margin calls · Counterparty credit risk",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "blue"
+  },
+  {
+    "id": "csdr",
+    "title": "CSDR Settlement Compliance",
+    "category": "Operations · Northern Trust",
+    "tech": "Trade monitoring · Valuation disputes · 100% compliance",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "yellow"
+  },
+  {
+    "id": "geo-risk",
+    "title": "Geopolitical Risk Intelligence",
+    "category": "Research · MitKat Advisory",
+    "tech": "Macro risk · Tactical asset allocation",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "mint"
+  },
+  {
+    "id": "capstone",
+    "title": "Capstone project (placeholder)",
+    "category": "SMU MSc",
+    "tech": "Add your wealth management project here",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "white"
+  },
+  {
+    "id": "linkedin",
+    "title": "More on LinkedIn",
+    "category": "More",
+    "tech": "linkedin.com/in/shreya-nair-2988011a9",
+    "href": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "tone": "lilac"
+  }
+]

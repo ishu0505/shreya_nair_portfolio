@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <rect width="600" height="300" fill="#141418"/>
+  <path d="M0 240 L90 190 L170 215 L260 140 L340 170 L430 90 L520 120 L600 50 V300 H0 Z" fill="#ff4d94" opacity=".16"/>
+  <path d="M0 240 L90 190 L170 215 L260 140 L340 170 L430 90 L520 120 L600 50" fill="none" stroke="#ff4d94" stroke-width="3"/>
+  <text x="32" y="56" font-family="Georgia, serif" font-size="22" fill="#ffffff" opacity=".85" letter-spacing="3"></text>
+</svg>

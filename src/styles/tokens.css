@@ -1,0 +1,54 @@
+/**
+ * FILE: src/styles/tokens.css
+ * The design settings in one place: colours, spacing, fonts. Change a colour here and it changes everywhere.
+ * Theme: black and pink. Dark surfaces, one hot-pink accent, soft-pink highlights.
+ */
+
+:root {
+  --bg: #09090b;
+  --surface: #121215;
+  --ink: #f5f5f7;       /* main text on dark surfaces */
+  --muted: #a3a3ae;
+  --line: rgba(255, 255, 255, .1);
+
+  --accent: #ff4d94;    /* the pink */
+  --accent-strong: #ff2e82;
+  --accent-soft: #ffc2da;
+  --accent-wash: #ffe6ef;
+  --black: #09090b;
+
+  /* Tone names are kept (the admin picks from them); each now means a black / pink surface.
+     --tone = the fill, --on = the text colour that sits on it. */
+  --blue: #17171c;
+  --yellow: #221320;
+  --mint: #1b1b21;
+  --pink: var(--accent);
+  --lilac: var(--accent-soft);
+  --peach: var(--accent-wash);
+  --white: #f5f5f7;
+
+  --radius: 20px;
+  --gap: 16px;
+  --pad: 18px;
+  --header-h: 68px;
+  --stage-h: calc(100dvh - var(--header-h) - var(--pad) - 8px);
+  --rail-w: 210px;
+  --k: 1; /* sticker size multiplier (smaller on phones) */
+
+  --wobble-a: var(--radius);
+  --wobble-b: 12px;
+
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-head: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --pad: 22px;
+    --gap: 18px;
+  }
+}
+
+@media (max-width: 899px) {
+  :root { --k: .75; }
+}

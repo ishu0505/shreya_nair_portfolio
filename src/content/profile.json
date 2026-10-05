@@ -1,0 +1,49 @@
+{
+  "name": "Shreya Nair",
+  "role": "MSc Wealth Management Candidate",
+  "lead": "Derivatives operations and risk professional, now building a career in wealth management at Singapore Management University",
+  "location": "Singapore",
+  "school": "SMU MSc",
+  "status": "Open to opportunities",
+  "email": "Shreya.nair.2026@mwm.smu.edu.sg",
+  "phone": "+65 98659854",
+  "avatar": "assets/images/avatar-placeholder.svg",
+  "resume": {
+    "path": "assets/resume/Shreya-Nair-Resume.pdf",
+    "filename": "Shreya-Nair-Resume.pdf"
+  },
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/shreya-nair-2988011a9/",
+    "github": "",
+    "kaggle": "",
+    "medium": "",
+    "form": ""
+  },
+  "current": {
+    "title": "MSc Wealth Management @ SMU",
+    "text": "Singapore Management University, Jul 2026 – Jul 2027."
+  },
+  "startup": {
+    "title": "Programme Manager, Meragi",
+    "text": "Founder's Office at a Series-A startup in Bangalore (Jan – Apr 2025): pricing, unit economics and cross-functional projects."
+  },
+  "focus": [
+    "Wealth Management",
+    "Derivatives & Collateral",
+    "Counterparty & Liquidity Risk",
+    "Strategy & Pricing"
+  ],
+  "toolkit": [
+    "Bloomberg Terminal",
+    "SWIFT Messaging",
+    "Euroclear",
+    "DTC",
+    "Colline",
+    "Advanced Excel (Macros)",
+    "Financial Modelling"
+  ],
+  "certificate": {
+    "title": "Financial Analyst (Udemy)",
+    "url": ""
+  }
+}
